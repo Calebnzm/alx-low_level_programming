@@ -10,9 +10,9 @@ int main(void)
 {int d, z;
 for (d = 0; d <= 9; d++)
 {
-for (z=0; z<=9; z++)
+for (z = 0; z <= 9; z++)
 {
-if (z != d && d<z)
+if (z != d && d < z)
 {
 putchar(d + '0');
 putchar(z + '0');
