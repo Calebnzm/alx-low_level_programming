@@ -7,10 +7,10 @@
 #include <stdio.h>
 
 int main(void)
-{int d;
+{int d, z;
 for (d = 0; d <= 9; d++)
 {
-for (int z=0; z<=9; z++)
+for (z=0; z<=9; z++)
 {
 if (z != d && d<z)
 {
