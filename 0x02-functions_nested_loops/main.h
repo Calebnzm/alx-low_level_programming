@@ -10,6 +10,7 @@ int _putchar(char c);
 
 /* Function prototypes */
 int function_name(int arg1, char arg2);
+int print_sign(int n);
 int _islower(int c);
 int _isalpha(int c);
 void another_function(char arg3, int arg4);
