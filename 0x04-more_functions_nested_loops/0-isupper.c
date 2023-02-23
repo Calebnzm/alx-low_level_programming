@@ -6,10 +6,6 @@
  *
  * Return: 1 if c is uppercase, 0 otherwise
  */
-int _putchar(char c)
-{
-return (write(1, &c, 1));
-}
 int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z') {
