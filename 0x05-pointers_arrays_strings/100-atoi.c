@@ -9,23 +9,18 @@
  */
 int _atoi(char *s)
 {
-int i, sign, res;
+int sign = 1, num = 0;
 
-i = 0;
-sign = 1;
-res = 0;
-
-while (s[i] != '\0')
+while (*s)
 {
-if (s[i] == '-')
-sign = sign * -1;
-if (s[i] >= '0' && s[i] <= '9')
-res = res * 10 + (s[i] - '0');
-if (s[i] == '+' && s[i + 1] >= '0' && s[i + 1] <= '9')
+if (*s == '-')
+sign *= -1;
+else if (*s >= '0' && *s <= '9')
+num = num * 10 + (*s - '0');
+else if (num > 0)
 break;
-i++;
+s++;
 }
 
-return (sign * res);
+return sign * num;
 }
-
