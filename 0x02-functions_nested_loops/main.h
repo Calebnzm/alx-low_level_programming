@@ -11,6 +11,11 @@ int _putchar(char c);
 /* Function prototypes */
 int function_name(int arg1, char arg2);
 int print_sign(int n);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
+void print_times_table(int n);
+void jack_bauer(void);
 int _abs(int);
 int print_last_digit(int n);
 int _islower(int c);
