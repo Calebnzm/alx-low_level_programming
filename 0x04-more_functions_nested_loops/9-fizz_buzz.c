@@ -1,28 +1,31 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point
+ * main - entry point, prints the numbers from 1 to 100, followed by a new line
+ *        for multiples of three print Fizz instead of the number
+ *        and for the multiples of five print Buzz.
+ *        For numbers which are multiples of both three and five print FizzBuzz.
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success
  */
 int main(void)
 {
 int i;
 
-for (i = 1; i <= 100; i++) {
-if (i % 3 == 0 && i % 5 == 0) {
-print_str("FizzBuzz ");
-} else if (i % 3 == 0) {
-print_str("Fizz ");
-} else if (i % 5 == 0) {
-print_str("Buzz ");
-} else {
-print_int(i);
-print_char(' ');
-}
+for (i = 1; i <= 100; i++)
+{
+if (i % 3 == 0 && i % 5 == 0)
+printf("FizzBuzz ");
+else if (i % 3 == 0)
+printf("Fizz ");
+else if (i % 5 == 0)
+printf("Buzz ");
+else
+printf("%d ", i);
 }
 
-print_char('\n');
+printf("\n");
 
 return (0);
 }
+
