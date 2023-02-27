@@ -22,5 +22,5 @@ break;
 s++;
 }
 
-return (sign * num);
+return (sign *num);
 }
