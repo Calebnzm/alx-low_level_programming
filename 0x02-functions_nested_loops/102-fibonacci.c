@@ -3,28 +3,24 @@
 /**
  * main - Entry point
  *
- * Description: Prints the first 50 Fibonacci numbers, separated by comma
+ * Description: Generates and prints the first 50 Fibonacci numbers
+ * starting with 1 and 2, separated by a comma and a space
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int n, i;
-unsigned long long fib1 = 1, fib2 = 2, fib;
-
-printf("1, 2, ");
-for (i = 3; i <= 50; i++)
+int a = 1, b = 2, c;
+printf("%d, %d", a, b);
+for (int i = 2; i < 50; i++)
 {
-fib = fib1 + fib2;
-printf("%llu", fib);
-if (i < 50)
-{
-printf(", ");
-}
-fib1 = fib2;
-fib2 = fib;
+c = a + b;
+printf(", %d", c);
+a = b;
+b = c;
 }
 printf("\n");
-
-return 0;
+return (0);
 }
+
