@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 
+char *cap_string(char *str);
 int _putchar(char c);
 void reverse_array(int *a, int n);
 int _strlen(char *s);
