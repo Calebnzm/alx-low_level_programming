@@ -4,6 +4,7 @@
 #include <stddef.h>
 
 int _putchar(char c);
+void reverse_array(int *a, int n);
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 char *_strncpy(char *dest, char *src, int n);
