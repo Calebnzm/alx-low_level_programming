@@ -2,6 +2,7 @@
 #define MAIN_H_
 
 int _helper(int n, int i);
+int wildcmp(char *s1, char *s2);
 int is_palindrome_helper(char *s, int start, int end);
 int len(char *s);
 int is_palindrome(char *s);
