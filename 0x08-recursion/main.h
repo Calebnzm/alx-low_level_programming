@@ -1,6 +1,7 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
+int _helper(int n, int i);
 int _putchar(char c);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
