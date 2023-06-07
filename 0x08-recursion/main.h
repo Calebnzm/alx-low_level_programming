@@ -2,6 +2,9 @@
 #define MAIN_H_
 
 int _helper(int n, int i);
+int is_palindrome_helper(char *s, int start, int end);
+int len(char *s);
+int is_palindrome(char *s);
 int _putchar(char c);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
