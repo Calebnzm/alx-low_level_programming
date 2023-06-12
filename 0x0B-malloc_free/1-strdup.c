@@ -20,7 +20,7 @@ if (str == NULL)
 {
 	return (NULL);
 }
-a = malloc(i *sizeof(char));
+a = malloc(i *sizeof(char) + 1);
 if (a == NULL)
 {
 	return (NULL);
@@ -29,5 +29,6 @@ for (j = 0; j <= i; j++)
 {
 a[j] = str[j];
 }
+a[j] = '\0';
 return (a);
 }
