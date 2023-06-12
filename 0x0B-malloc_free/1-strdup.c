@@ -18,7 +18,6 @@ i++;
 }
 if (str == NULL)
 {
-	printf("failed to allocate memory\n");
 	return (NULL);
 }
 a = malloc(i *sizeof(char) + 1);
