@@ -29,8 +29,8 @@ while (s2[j] != '\0')
 {
 j++;
 }
-k = i + j + 2;
-a = malloc(k * sizeof(char));
+k = i + j + 1;
+a = malloc(k *sizeof(char));
 if (a == NULL)
 {
 	return (NULL);
