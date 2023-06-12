@@ -29,7 +29,7 @@ while (s2[j] != '\0')
 {
 j++;
 }
-k = i + j + 2;
+k = i + j + 1;
 a = malloc(k *sizeof(char));
 if (a == NULL)
 {
@@ -39,7 +39,10 @@ for (l = 0; l < i; l++)
 {
 a[l] = s1[l];
 }
-a[l] = ' ';
+if (i != 0 && j != 0)
+{
+	a[l] = ' ';
+}
 for (l = 0; l < j; l++)
 {
 a[l + i + 1] = s2[l];
