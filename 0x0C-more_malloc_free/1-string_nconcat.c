@@ -30,7 +30,7 @@ i++;
 }
 if (n >= lens2)
 	n = lens2;
-lens3 = lens1 + n + 1;
+lens3 = lens1 + n;
 a = malloc(lens3);
 if (a == NULL)
 	return (NULL);
