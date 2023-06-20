@@ -31,6 +31,8 @@ if (newnode == NULL)
 {
 	free(namecopy);
 	free(ownercopy);
+	free(name);
+	free(owner);
 	return (NULL);
 }
 newnode->name = namecopy;
