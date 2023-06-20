@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string>
+#include <string.h>
 #include <stdlib.h>
 #include "dog.h"
 
@@ -13,7 +13,6 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int i, j, k, l;
 dog_t *newnode;
 char *namecopy, *ownercopy;
 namecopy = strdup(name);
