@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -13,30 +13,25 @@
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *newnode;
-char *namecopy, *ownercopy;
-namecopy = strdup(name);
-if (namecopy == NULL)
+char *ownercopy;
+dog_t *new_dog_ptr = malloc(sizeof(dog_t));
+if (new_dog_ptr == NULL)
+	return (NULL);
+new_dog_ptr->name = strdup(name);
+if (new_dog_ptr->name == NULL)
 {
+	free(new_dog_ptr);
 	return (NULL);
 }
+new_dog_ptr->age = age;
 ownercopy = strdup(owner);
 if (ownercopy == NULL)
 {
-	free(namecopy);
+	free(new_dog_ptr->name);
+	free(new_dog_ptr);
 	return (NULL);
 }
-newnode = malloc(sizeof(dog_t));
-if (newnode == NULL)
-{
-	free(namecopy);
-	free(ownercopy);
-	free(name);
-	free(owner);
-	return (NULL);
+new_dog_ptr->owner = ownercopy;
+return (new_dog_ptr);
 }
-newnode->name = namecopy;
-newnode->age = age;
-newnode->owner = ownercopy;
-return (newnode);
-}
+
