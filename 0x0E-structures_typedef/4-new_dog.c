@@ -18,14 +18,12 @@ char *namecopy, *ownercopy;
 namecopy = strdup(name);
 if (namecopy == NULL)
 {
-	free(namecopy);
 	return (NULL);
 }
 ownercopy = strdup(owner);
 if (ownercopy == NULL)
 {
 	free(namecopy);
-	free(ownercopy);
 	return (NULL);
 }
 newnode = malloc(sizeof(dog_t));
