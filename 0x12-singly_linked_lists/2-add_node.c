@@ -19,7 +19,6 @@ if (newnode == NULL)
 if (str == NULL)
 {
 	newnode->str = NULL;
-	newnode->len = strlen(str);
 	newnode->next = *head;
 	*head = newnode;
 }
