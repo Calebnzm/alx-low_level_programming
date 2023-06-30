@@ -16,7 +16,10 @@ if (head != NULL)
 	{
 	freeer = current;
 	current = freeer->next;
+	if (freer->str != NULL)
+	{
 	free(freeer->str);
+	}
 	free(freeer);
 	}
 }
