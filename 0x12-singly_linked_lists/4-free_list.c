@@ -16,7 +16,9 @@ if (head != NULL)
 	{
 	freeer = current;
 	current = freeer->next;
+	free(freeer->str);
 	free(freeer);
 	}
 }
 }
+
